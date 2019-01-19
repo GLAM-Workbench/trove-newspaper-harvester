@@ -15,6 +15,6 @@ Notebooks include:
 
 Run the Trove Harvester web app in appmode:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/https%3A%2F%2Fmybinder.org%2Fv2%2Fgh%2FGLAM-Workbench%2Ftrove-newspaper-harvester/master?urlpath=%2Fapps%2Fnewspaper_harvester_app.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master?urlpath=%2Fapps%2Fnewspaper_harvester_app.ipynb)
 
 
