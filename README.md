@@ -17,4 +17,7 @@ Run the Trove Harvester web app in appmode:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master?urlpath=%2Fapps%2Fnewspaper_harvester_app.ipynb)
 
+----
 
+See the [GLAM Workbench documentation](https://glam-workbench.github.io/) for more details.  
+If you think this project is worthwhile, you might like [to support me on Patreon](https://www.patreon.com/timsherratt).
