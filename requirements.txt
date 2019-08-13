@@ -6,7 +6,7 @@ attrs==19.1.0
 backcall==0.1.0
 bleach==2.1.4
 branca==0.3.1
-certifi==2018.8.24
+certifi
 chardet==3.0.4
 cycler==0.10.0
 decorator==4.3.0
@@ -24,7 +24,7 @@ Jinja2==2.10
 joblib==0.13.2
 json5==0.8.5
 jsonschema==3.0.2
-jupyter==1.0.0
+jupyter
 jupyter-client==5.3.1
 jupyter-console==5.2.0
 jupyter-core==4.4.0
