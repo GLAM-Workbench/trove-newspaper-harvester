@@ -1,7 +1,7 @@
 altair==3.2.0
 appmode==0.5.0
 appnope==0.1.0
-arrow==0.14.2
+arrow==0.15.2
 attrs==19.1.0
 backcall==0.1.0
 bleach==2.1.4
@@ -28,7 +28,7 @@ jupyter
 jupyter-client==5.3.1
 jupyter-console==5.2.0
 jupyter-core==4.4.0
-jupyterlab==1.0.5
+jupyterlab==1.1.4
 jupyterlab-server==1.0.0
 kiwisolver==1.1.0
 MarkupSafe==1.0
@@ -37,9 +37,9 @@ mistune==0.8.3
 nbconvert==5.4.0
 nbformat==4.4.0
 nltk==3.3
-notebook==6.0.0
+notebook==6.0.1
 numpy==1.15.1
-pandas==0.24.2
+pandas==0.25.1
 pandocfilters==1.4.2
 parso==0.3.1
 pexpect==4.6.0
@@ -69,11 +69,11 @@ tornado==5.1
 tqdm==4.32.2
 traitlets==4.3.2
 traittypes==0.2.1
-troveharvester==0.2.2
+troveharvester==0.2.3
 typing==3.6.6
 unicodecsv==0.14.1
 urllib3==1.23
-vega==2.5.0
+vega==2.6.0
 wcwidth==0.1.7
 webencodings==0.5.1
 widgetsnbextension==3.4.1
