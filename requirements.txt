@@ -1,5 +1,5 @@
 altair==3.2.0
-appmode==0.5.0
+appmode==0.8.0
 appnope==0.1.0
 arrow==0.15.2
 attrs==19.1.0
