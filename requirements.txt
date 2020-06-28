@@ -69,7 +69,7 @@ tornado==5.1
 tqdm==4.32.2
 traitlets==4.3.2
 traittypes==0.2.1
-troveharvester==0.3.0
+troveharvester==0.3.1
 typing==3.6.6
 unicodecsv==0.14.1
 urllib3==1.23
