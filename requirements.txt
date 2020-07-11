@@ -65,7 +65,7 @@ testpath==0.4.4
 textblob==0.15.3
 toolz==0.10.0
 tornado==6.0.4
-tqdm==4.46.1
+tqdm==4.47.0
 traitlets==4.3.3
 traittypes==0.2.1
 troveharvester==0.3.1

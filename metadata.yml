@@ -1,0 +1,8 @@
+plugins:
+  datasette-media:
+    thumbnail:
+      sql: |-
+        select imagepath as filepath, 200 as resize_height from records where article_id = :key
+    large:
+      sql: |-
+        select imagepath as filepath, 1024 as resize_height from records where article_id = :key
