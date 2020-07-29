@@ -105,7 +105,7 @@ tornado==6.0.4
 tqdm==4.47.0
 traitlets==4.3.3
 traittypes==0.2.1
-troveharvester==0.3.1
+troveharvester==0.3.2
 typing==3.7.4.1
 tzlocal==2.1
 unicodecsv==0.14.1
