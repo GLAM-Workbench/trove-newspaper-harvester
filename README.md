@@ -2,7 +2,7 @@
 
 # Trove Newspaper Harvester
 
-Jupyter notebooks that use the Trove Harvester to download large quantities of digitised newspaper articles from Trove. There's also a few examples of how you can analyse and explore the harvested data
+Jupyter notebooks that use the Trove Harvester to download large quantities of digitised newspaper articles from Trove. There's also a few examples of how you can analyse and explore the harvested data.
 
 Run the notebooks in this repository live on MyBinder — just click the button (it might take a little while to load).
 
