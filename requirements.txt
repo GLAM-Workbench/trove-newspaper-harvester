@@ -18,7 +18,7 @@ click==7.1.2
 click-default-group==1.2.2
 csvs-to-sqlite==1.2
 cycler==0.10.0
-datasette==0.45
+datasette==0.46
 datasette-json-html==0.6
 datasette-media==0.3
 dateparser==1.0.0
