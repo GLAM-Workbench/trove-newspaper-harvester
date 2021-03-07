@@ -1,10 +1,7 @@
 name: cache-pull-request
 on:
   pull_request:
-    types: [opened, reopened]
-  push:
-    branches:
-      - master
+    types: [opened, synchronize, reopened]
 
 jobs:
   Create-Binder-Badge:
