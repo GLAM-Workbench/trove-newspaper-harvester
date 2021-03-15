@@ -21,13 +21,13 @@ There are a number of different ways to use these notebooks. Binder is quickest 
 
 ### Using Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master)
+[![Launch on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master)
 
 Click on the button above to launch the notebooks in this repository using the [Binder](https://mybinder.org/) service (it might take a little while to load). This is a free service, but note that sessions will close if you stop using the notebooks, and no data will be saved. Make sure you download any changed notebooks or harvested data that you want to save.
 
 ### Using Reclaim Cloud
 
-[<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="20" role="img" aria-label="Launch on: Reclaim Cloud"><title>Launch on: Reclaim Cloud</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="156" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="67" height="20" fill="#555"/><rect x="67" width="89" height="20" fill="#007ec6"/><rect width="156" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="345" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="570">Launch on</text><text x="345" y="140" transform="scale(.1)" fill="#fff" textLength="570">Launch on</text><text aria-hidden="true" x="1105" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="790">Reclaim Cloud</text><text x="1105" y="140" transform="scale(.1)" fill="#fff" textLength="790">Reclaim Cloud</text></g></svg>](https://app.my.reclaim.cloud/?manifest=https://raw.githubusercontent.com/GLAM-Workbench/trove-newspaper-harvester/master/reclaim-manifest.jps)
+[![Launch on Reclaim Cloud](https://glam-workbench.github.io/images/launch-on-reclaim-cloud.svg)](https://app.my.reclaim.cloud/?manifest=https://raw.githubusercontent.com/GLAM-Workbench/trove-newspaper-harvester/master/reclaim-manifest.jps)
 
 [Reclaim Cloud](https://reclaim.cloud/) is a paid hosting service, aimed particularly at supported digital scholarship in hte humanities. Unlike Binder, the environments you create on Reclaim Cloud will save your data – even if you switch them off! To run this repository on Reclaim Cloud for the first time:
 
@@ -47,7 +47,7 @@ You can use Docker to run a pre-built computing environment on your own computer
 * Create a new directory for this repository and open it from the command line.
 * From the command line, run the following command:  
   ```
-  docker run -p 8888:8888 --name trove-newspaper-harvester -v "$PWD":/home/jovyan/work wragge/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --LabApp.default_url='/lab/tree/README.md'
+  docker run -p 8888:8888 --name trove-newspaper-harvester -v "$PWD":/home/jovyan/work wragge/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --LabApp.default_url='/lab/tree/index.md'
   ```
 * It will take a while to download and configure the Docker image. Once it's ready you'll see a message saying that Jupyter Notebook is running.
 * Point your web browser to `http://127.0.0.1:8888`
