@@ -19,6 +19,11 @@ jobs:
         BINDER_CACHE: true
         PUBLIC_REGISTRY_CHECK: true
 
+    - name: Modify readme for DockerHub
+        run: |
+          sed -i -r 's/\[(.*)\]\(.*\.ipynb\)/\1/' README.md
+          sed -i '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md
+
     - name: update Docker Hub description
       uses: peter-evans/dockerhub-description@v2
       with:
