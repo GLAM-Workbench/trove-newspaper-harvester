@@ -17,7 +17,7 @@ onInstall:
         - method: environment.control.SetContainerRunCmd
           params:
             nodeId: ${nodes.cp[0].id}
-            data: "jupyter lab --ip 0.0.0.0 --NotebookApp.password='${response.out}' --LabApp.default_url='/lab/tree/README.md'"
+            data: "jupyter lab --ip 0.0.0.0 --NotebookApp.password='${response.out}' --LabApp.default_url='/lab/tree/index.md'"
         - method: environment.control.RestartNodes
           params:
             nodeGroup: cp
