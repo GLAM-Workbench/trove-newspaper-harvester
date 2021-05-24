@@ -1,15 +1,16 @@
 # Trove Newspaper and Gazette Harvester
 
-The Jupyter notebooks in this repository use the Trove Harvester to download large quantities of digitised newspaper articles from Trove. There's also a few examples of how you can analyse and explore the harvested data.
+The [Trove Newspaper & Gazette Harvester Harvester](https://pypi.org/project/troveharvester/) makes it easy to download large quantities of digitised articles from Trove's newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper & Gazette Harvester will get **everything**.
+
+The Jupyter notebooks in this repository use the Trove Newspaper and Gazette Harvester to download large quantities of digitised newspaper articles from Trove. There's also a few examples of how you can analyse and explore the harvested data.
 
 The notebooks include:
 
-* [**Trove Harvester web app**](newspaper_harvester_app.ipynb) — a simple web interface to the TroveHarvester, the easiest way to harvest data from Trove (runs in Appmode)
 * [**Using TroveHarvester to get newspaper articles in bulk**](Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb) — an easy introduction to the TroveHarvester tool
+* [**Trove Harvester web app**](newspaper_harvester_app.ipynb) — a simple web interface to the TroveHarvester, the easiest way to harvest data from Trove (runs in Appmode)
+* [Display the results of a harvest as a searchable database using Datasette](display_harvest_results_using_datasette.ipynb) – load your harvested data into a SQLite database and explore it using Datasette
 * [**Exploring your TroveHarvester data**](Exploring-your-TroveHarvester-data.ipynb) — use Pandas to analyse your data and create some visualisations
-* [**Explore harvested text files**](Explore-harvested-text-files.ipynb) — analyse the full text content of harvested articles
-
-If you haven't used Jupyter notebooks before, you might want to try the Getting Started notebook. It introduces some basic concepts using data from the National Museum of Australia.
+* [**Explore harvested text files**](Explore-harvested-text-files.ipynb) (experimental) — analyse the full text content of harvested articles
 
 See the [GLAM Workbench for more details](https://glam-workbench.github.io/trove-harvester/).
 
@@ -25,6 +26,8 @@ There are a number of different ways to use these notebooks. Binder is quickest 
 
 Click on the button above to launch the notebooks in this repository using the [Binder](https://mybinder.org/) service (it might take a little while to load). This is a free service, but note that sessions will close if you stop using the notebooks, and no data will be saved. Make sure you download any changed notebooks or harvested data that you want to save.
 
+See the [Using Binder](https://glam-workbench.net/using-binder/) section of the GLAM Workbench for more details.
+
 ### Using Reclaim Cloud
 
 [![Launch on Reclaim Cloud](https://glam-workbench.github.io/images/launch-on-reclaim-cloud.svg)](https://app.my.reclaim.cloud/?manifest=https://raw.githubusercontent.com/GLAM-Workbench/trove-newspaper-harvester/master/reclaim-manifest.jps)
@@ -37,7 +40,7 @@ Click on the button above to launch the notebooks in this repository using the [
 * Sit back and wait for the installation to complete!
 * Once the installation is finished click on the 'Open in Browser' button of your newly created environment (note that you might need to wait a few minutes before everything is ready).
 
-See the GLAM Workbench for more details.
+See the [Using Reclaim Cloud](https://glam-workbench.net/using-reclaim-cloud/) section GLAM Workbench [for more details.
 
 ### Using Docker
 
@@ -47,12 +50,12 @@ You can use Docker to run a pre-built computing environment on your own computer
 * Create a new directory for this repository and open it from the command line.
 * From the command line, run the following command:  
   ```
-  docker run -p 8888:8888 --name trove-newspaper-harvester -v "$PWD":/home/jovyan/work wragge/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --LabApp.default_url='/lab/tree/index.md'
+  docker run -p 8888:8888 --name trove-newspaper-harvester -v "$PWD":/home/jovyan/work glamworkbench/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --LabApp.default_url='/lab/tree/index.md'
   ```
 * It will take a while to download and configure the Docker image. Once it's ready you'll see a message saying that Jupyter Notebook is running.
 * Point your web browser to `http://127.0.0.1:8888`
 
-See the GLAM Workbench for more details.
+See the [Using Docker](https://glam-workbench.net/using-docker/) section of the GLAM Workbench for more details.
 
 ### Setting up on your own computer
 
@@ -75,8 +78,6 @@ See the GLAM Workbench for more details.
 ## Cite as
 
 See the GLAM Workbench or [Zenodo](https://doi.org/10.5281/zenodo.3545044) for up-to-date citation details.
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3545044.svg)](https://doi.org/10.5281/zenodo.3545044)
 
 ----
 
