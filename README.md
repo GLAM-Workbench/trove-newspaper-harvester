@@ -8,7 +8,7 @@ The notebooks include:
 
 * [**Using TroveHarvester to get newspaper articles in bulk**](Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb) — an easy introduction to the TroveHarvester tool
 * [**Trove Harvester web app**](newspaper_harvester_app.ipynb) — a simple web interface to the TroveHarvester, the easiest way to harvest data from Trove (runs in Appmode)
-* [Display the results of a harvest as a searchable database using Datasette](display_harvest_results_using_datasette.ipynb) – load your harvested data into a SQLite database and explore it using Datasette
+* [**Display the results of a harvest as a searchable database using Datasette**](display_harvest_results_using_datasette.ipynb) – load your harvested data into a SQLite database and explore it using Datasette
 * [**Exploring your TroveHarvester data**](Exploring-your-TroveHarvester-data.ipynb) — use Pandas to analyse your data and create some visualisations
 * [**Explore harvested text files**](Explore-harvested-text-files.ipynb) (experimental) — analyse the full text content of harvested articles
 
