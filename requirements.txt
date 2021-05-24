@@ -53,7 +53,7 @@ ipywidgets==7.6.3
 itsdangerous
 janus==0.6.1
 jedi==0.18.0
-Jinja2==3.0.1
+Jinja2
 joblib==1.0.1
 json5==0.9.5
 jsonschema==3.2.0
