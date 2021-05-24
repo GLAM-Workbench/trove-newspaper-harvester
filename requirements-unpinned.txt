@@ -1,0 +1,22 @@
+IPython
+altair
+arrow
+beautifulsoup4
+ipywidgets
+jupyter_server
+jupyterlab
+nltk
+numpy
+pandas
+requests
+sqlite_utils
+textblob
+tqdm
+unicodecsv
+voila
+voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
+wordcloud
+troveharvester
+datasette
+jupyter-server-proxy
+jupyter-archive
