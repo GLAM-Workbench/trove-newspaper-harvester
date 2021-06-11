@@ -153,7 +153,7 @@ voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git@4b5d6d
 wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==1.0.1
-websockets==9.0.2
+websockets==9.1
 widgetsnbextension==3.5.1
 wordcloud==1.8.1
 xarray==0.18.2
