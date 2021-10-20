@@ -1,5 +1,7 @@
 # Trove Newspaper and Gazette Harvester
 
+Current version: [v1.0.0](https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.0.0)
+
 The [Trove Newspaper & Gazette Harvester Harvester](https://pypi.org/project/troveharvester/) makes it easy to download large quantities of digitised articles from Trove's newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper & Gazette Harvester will get **everything**.
 
 The Jupyter notebooks in this repository use the Trove Newspaper and Gazette Harvester to download large quantities of digitised newspaper articles from Trove. There's also a few examples of how you can analyse and explore the harvested data.
@@ -41,6 +43,23 @@ See the [Using Binder](https://glam-workbench.net/using-binder/) section of the 
 * Once the installation is finished click on the 'Open in Browser' button of your newly created environment (note that you might need to wait a few minutes before everything is ready).
 
 See the [Using Reclaim Cloud](https://glam-workbench.net/using-reclaim-cloud/) section GLAM Workbench [for more details.
+
+### Using the Nectar Cloud
+
+The [Nectar Research Cloud](https://ardc.edu.au/services/nectar-research-cloud/) (part of the Australian Research Data Commons) provides cloud computing services to researchers in Australian and New Zealand universities. Any university-affiliated researcher can log on to Nectar and receive [up to 6 months of free cloud computing time](https://tutorials.rc.nectar.org.au/allocation-management/03-account-and-trial). And if you need more, you can [apply for a specific project allocation](https://tutorials.rc.nectar.org.au/allocation-management/04-allocation-and-projects).
+
+The GLAM Workbench is available in the Nectar Cloud as a pre-configured application. This means you can get it up and going without worrying about the technical infrastructure – just fill in a few details and you're away! To create an instance of this repository in the Nectar Cloud:
+
+* Log in to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) using your university credentials.
+* From the Dashboard choose **Applications -> Browse Local**.
+* Enter 'GLAM' in the filter box and hit Enter, you should see the GLAM Workbench application.
+* Click on the GLAM Workbench application's  **Quick Deploy** button.
+* Step through the various [configuration options](https://glam-workbench.net/using-nectar/#setting-up-your-own-glam-workbench-repository). Some options are only available if you have a dedicated project allocation.
+* When asked to select a GLAM Workbench repository, choose 'Trove newspaper and gazette harvester' from the dropdown list.
+* Complete the configuration and deploy your GLAM Workbench instance.
+* The url to access your instance will be displayed once it's ready. Click on the url!
+
+See [Using Nectar](https://glam-workbench.net/using-nectar/) for more information.
 
 ### Using Docker
 
