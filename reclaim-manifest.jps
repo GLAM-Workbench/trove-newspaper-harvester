@@ -25,7 +25,7 @@ onInstall:
 nodes:
     nodeGroup: cp
     cloudlets: 16
-    image: "glamworkbench/trove-newspaper-harvester:latest"
+    image: "quay.io/glamworkbench/trove-newspaper-harvester:latest"
     entrypoint: /usr/local/bin/repo2docker-entrypoint
     volumes:
         - /home/jovyan/work
