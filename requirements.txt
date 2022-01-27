@@ -65,7 +65,7 @@ jupyter-core==4.7.1
 jupyter-packaging==0.10.2
 jupyter-server==1.8.0
 jupyter-server-mathjax==0.2.2
-jupyter-server-proxy==3.0.2
+jupyter-server-proxy==3.2.1
 jupyterlab==3.0.16
 jupyterlab-git==0.30.1
 jupyterlab-pygments==0.1.2
