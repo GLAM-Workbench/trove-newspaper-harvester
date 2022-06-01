@@ -40,7 +40,7 @@ html2text==2020.1.16
 html5lib==1.1
 httpcore==0.13.3
 httptools==0.2.0
-httpx==0.18.1
+httpx==0.23.0
 hupper==1.10.3
 idna==2.10
 importlib-metadata==4.0.1
