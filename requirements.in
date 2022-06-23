@@ -1,4 +1,3 @@
-IPython
 altair
 arrow
 beautifulsoup4
@@ -20,3 +19,5 @@ troveharvester
 datasette
 jupyter-server-proxy
 jupyter-archive
+python-dotenv
+scikit-learn
