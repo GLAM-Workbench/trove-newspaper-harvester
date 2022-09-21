@@ -5,7 +5,7 @@
   "related_identifiers": [
     {
       "scheme": "url",
-      "identifier": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/tree/v1.1.1",
+      "identifier": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/tree/v1.2.0",
       "relation": "isDerivedFrom",
       "resource_type": "software"
     },
@@ -28,7 +28,7 @@
       "resource_type": "other"
     }
   ],
-  "version": "v1.1.1",
+  "version": "v1.2.0",
   "upload_type": "software",
   "keywords": [
     "Trove",
@@ -36,7 +36,7 @@
     "Jupyter",
     "GLAM Workbench"
   ],
-  "publication_date": "2022-08-29",
+  "publication_date": "2022-09-21",
   "creators": [
     {
       "orcid": "0000-0001-7956-4498",
@@ -44,5 +44,5 @@
     }
   ],
   "access_right": "open",
-  "description": "<p>Current version: <a href=\"https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.1.1\">v1.1.1</a></p> <p>The <a href=\"https://pypi.org/project/troveharvester/\">Trove Newspaper &amp; Gazette Harvester Harvester</a> makes it easy to download large quantities of digitised articles from Trove’s newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper &amp; Gazette Harvester will get <strong>everything</strong>.</p> <p>The Jupyter notebooks in this repository use the Trove Newspaper and Gazette Harvester to download large quantities of digitised newspaper articles from Trove. There’s also a few examples of how you can analyse and explore the harvested data.</p> <p>The notebooks include:</p> <ul> <li><strong>Using TroveHarvester to get newspaper articles in bulk</strong> — an easy introduction to the TroveHarvester tool</li> <li><strong>Trove Harvester web app</strong> — a simple web interface to the TroveHarvester, the easiest way to harvest data from Trove (runs in Voila)</li> <li><strong>Display the results of a harvest as a searchable database using Datasette</strong> – load your harvested data into a SQLite database and explore it using Datasette</li> <li><strong>Exploring your TroveHarvester data</strong> — use Pandas to analyse your data and create some visualisations</li> <li><strong>Explore harvested text files</strong> (experimental) — analyse the full text content of harvested articles</li> </ul> <p>See the <a href=\"https://glam-workbench.github.io/trove-harvester/\">GLAM Workbench for more details</a>.</p> <h2 id=\"cite-as\">Cite as</h2> <p>See the GLAM Workbench or <a href=\"https://doi.org/10.5281/zenodo.3545044\">Zenodo</a> for up-to-date citation details.</p> <hr /> <p>This repository is part of the <a href=\"https://glam-workbench.github.io/\">GLAM Workbench</a>.<br /> If you think this project is worthwhile, you might like <a href=\"https://github.com/sponsors/wragge?o=esb\">to sponsor me on GitHub</a>.</p>"
+  "description": "<p>Current version: <a href=\"https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.2.0\">v1.2.0</a></p> <p>The <a href=\"https://pypi.org/project/trove-newspaper-harvester/\">Trove Newspaper &amp; Gazette Harvester Harvester</a> makes it easy to download large quantities of digitised articles from Trove’s newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper &amp; Gazette Harvester will get <strong>everything</strong>.</p> <p>The Jupyter notebooks in this repository use the Trove Newspaper and Gazette Harvester to download large quantities of digitised newspaper articles from Trove. There’s also a few examples of how you can analyse and explore the harvested data.</p> <p>The notebooks include:</p> <ul> <li><strong>Using TroveHarvester to get newspaper articles in bulk</strong> — an easy introduction to the TroveHarvester tool</li> <li><strong>Trove Harvester web app</strong> — a simple web interface to the TroveHarvester, the easiest way to harvest data from Trove (runs in Voila)</li> <li><strong>Display the results of a harvest as a searchable database using Datasette</strong> – load your harvested data into a SQLite database and explore it using Datasette</li> <li><strong>Exploring your TroveHarvester data</strong> — use Pandas to analyse your data and create some visualisations</li> <li><strong>Explore harvested text files</strong> (experimental) — analyse the full text content of harvested articles</li> </ul> <p>See the <a href=\"https://glam-workbench.github.io/trove-harvester/\">GLAM Workbench for more details</a>.</p> <h2 id=\"cite-as\">Cite as</h2> <p>See the GLAM Workbench or <a href=\"https://doi.org/10.5281/zenodo.3545044\">Zenodo</a> for up-to-date citation details.</p> <hr /> <p>This repository is part of the <a href=\"https://glam-workbench.github.io/\">GLAM Workbench</a>.<br /> If you think this project is worthwhile, you might like <a href=\"https://github.com/sponsors/wragge?o=esb\">to sponsor me on GitHub</a>.</p>"
 }
