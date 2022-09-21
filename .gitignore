@@ -7,3 +7,4 @@ draft*.ipynb
 *.old
 .env
 getting-started/my_nma_dataset.csv
+*.sqlite

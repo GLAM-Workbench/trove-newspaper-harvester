@@ -15,7 +15,7 @@ unicodecsv
 voila
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
 wordcloud
-troveharvester
+trove-newspaper-harvester
 datasette
 jupyter-server-proxy
 jupyter-archive
