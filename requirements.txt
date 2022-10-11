@@ -449,7 +449,7 @@ traitlets==5.3.0
     #   nbformat
     #   notebook
     #   voila
-trove-newspaper-harvester==0.6.3
+trove-newspaper-harvester==0.6.5
     # via -r requirements.in
 trove-newspaper-images==0.2.1
     # via trove-newspaper-harvester
