@@ -61,7 +61,7 @@ bs4==0.0.1
     # via trove-newspaper-harvester
 cattrs==22.1.0
     # via requests-cache
-certifi==2022.6.15
+certifi==2022.12.7
     # via
     #   httpcore
     #   httpx
