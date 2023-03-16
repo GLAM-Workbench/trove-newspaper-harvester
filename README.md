@@ -1,6 +1,6 @@
 # Trove Newspaper and Gazette Harvester
 
-Current version: [v1.2.2](https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.2.2)
+Current version: [v1.3.0](https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.3.0)
 
 The [Trove Newspaper & Gazette Harvester Harvester](https://pypi.org/project/trove-newspaper-harvester/) makes it easy to download large quantities of digitised articles from Trove's newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper & Gazette Harvester will get **everything**.
 
