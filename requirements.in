@@ -2,7 +2,8 @@ altair
 arrow
 beautifulsoup4
 ipywidgets
-jupyter_server
+# To deal with https://github.com/jupyter-server/jupyter_server/issues/1038
+jupyter-server<2.0.0
 jupyterlab
 nltk
 numpy

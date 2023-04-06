@@ -9,3 +9,4 @@ draft*.ipynb
 getting-started/my_nma_dataset.csv
 *.sqlite
 anzac-day
+front_pages*
