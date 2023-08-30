@@ -2,7 +2,7 @@ altair
 arrow
 beautifulsoup4
 ipywidgets
-jupyter_server
+jupyter-server
 jupyterlab
 nltk
 numpy
@@ -12,11 +12,14 @@ sqlite_utils
 textblob
 tqdm
 unicodecsv
+ipywidgets
 voila
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
 wordcloud
 trove-newspaper-harvester
 datasette
+datasette-media
+datasette-json-html
 jupyter-server-proxy
 jupyter-archive
 python-dotenv
