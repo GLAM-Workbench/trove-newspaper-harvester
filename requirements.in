@@ -2,8 +2,7 @@ altair
 arrow
 beautifulsoup4
 ipywidgets
-# To deal with https://github.com/jupyter-server/jupyter_server/issues/1038
-jupyter-server<2.0.0
+jupyter-server
 jupyterlab
 nltk
 numpy
@@ -13,11 +12,14 @@ sqlite_utils
 textblob
 tqdm
 unicodecsv
+ipywidgets
 voila
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
 wordcloud
 trove-newspaper-harvester
 datasette
+datasette-media
+datasette-json-html
 jupyter-server-proxy
 jupyter-archive
 python-dotenv
