@@ -11,3 +11,4 @@ jq --arg text "$text" '.description = $text' .zenodo.json \
 | jq --arg pdate "$pdate" '.publication_date = $pdate' > zenodo.json;
 rm .zenodo.json;
 mv zenodo.json .zenodo.json;
+#python scripts/update_crate.py --version $1

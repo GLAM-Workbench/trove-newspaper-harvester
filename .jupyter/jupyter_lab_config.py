@@ -1129,4 +1129,5 @@ c.LabApp.default_url = '/lab/tree/index.ipynb'
 #          Should be in the form of an HTTP origin: ws[s]://hostname[:port]
 #  Default: ''
 # c.ServerApp.websocket_url = ''
-c.VoilaConfiguration.file_allowlist = '.*\.zip'
+c.VoilaConfiguration.file_allowlist = '.*'
+c.VoilaConfiguration.template = 'material'

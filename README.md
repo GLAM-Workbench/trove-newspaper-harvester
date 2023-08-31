@@ -1,6 +1,6 @@
 # Trove Newspaper and Gazette Harvester
 
-Current version: [v1.3.1](https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v1.3.1)
+Current version: [v2.0.0](https://github.com/GLAM-Workbench/trove-newspaper-harvester/releases/tag/v2.0.0)
 
 The [Trove Newspaper & Gazette Harvester Harvester](https://pypi.org/project/trove-newspaper-harvester/) makes it easy to download large quantities of digitised articles from Trove's newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper & Gazette Harvester will get **everything**.
 
@@ -70,7 +70,7 @@ You can use Docker to run a pre-built computing environment on your own computer
 * Create a new directory for this repository and open it from the command line.
 * From the command line, run the following command:  
   ```
-  docker run -p 8888:8888 --name trove-newspaper-harvester -v "$PWD":/home/jovyan/work quay.io/glamworkbench/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --NotebookApp.token='' --LabApp.default_url='/lab/tree/index.ipynb'
+  docker run -p 8888:8888 --name trove-newspaper-harvester quay.io/glamworkbench/trove-newspaper-harvester repo2docker-entrypoint jupyter lab --ip 0.0.0.0 --ServerApp.token=''
   ```
 * It will take a while to download and configure the Docker image. Once it's ready you'll see a message saying that Jupyter Notebook is running.
 * Point your web browser to `http://127.0.0.1:8888`
