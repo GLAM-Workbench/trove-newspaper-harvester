@@ -16,7 +16,6 @@ ipywidgets
 voila
 voila-material @ git+https://github.com/GLAM-Workbench/voila-material.git
 wordcloud
-trove-newspaper-harvester
 datasette
 datasette-media
 datasette-json-html

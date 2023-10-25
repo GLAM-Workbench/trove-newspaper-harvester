@@ -4,13 +4,46 @@
 #
 #    pip-compile requirements-dev.in
 #
+aiohttp==3.8.5
+    # via
+    #   -c requirements.txt
+    #   tuspy
+aiosignal==1.3.1
+    # via
+    #   -c requirements.txt
+    #   aiohttp
+anyio==3.7.1
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+arcp==0.2.1
+    # via
+    #   -c requirements.txt
+    #   rocrate
+argon2-cffi==23.1.0
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+argon2-cffi-bindings==21.2.0
+    # via
+    #   -c requirements.txt
+    #   argon2-cffi
+arrow==1.2.3
+    # via
+    #   -c requirements.txt
+    #   isoduration
 asttokens==2.2.1
     # via
     #   -c requirements.txt
     #   stack-data
+async-timeout==4.0.3
+    # via
+    #   -c requirements.txt
+    #   aiohttp
 attrs==23.1.0
     # via
     #   -c requirements.txt
+    #   aiohttp
     #   jsonschema
     #   referencing
 autopep8==2.0.4
@@ -19,19 +52,49 @@ backcall==0.2.0
     # via
     #   -c requirements.txt
     #   ipython
-black[jupyter]==23.7.0
+beautifulsoup4==4.12.2
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+bioblend==1.2.0
+    # via
+    #   -c requirements.txt
+    #   gxformat2
+black[jupyter]==23.10.0
     # via -r requirements-dev.in
+bleach==6.0.0
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+cachecontrol[filecache]==0.13.1
+    # via
+    #   -c requirements.txt
+    #   schema-salad
+certifi==2023.7.22
+    # via
+    #   -c requirements.txt
+    #   requests
+cffi==1.15.1
+    # via
+    #   -c requirements.txt
+    #   argon2-cffi-bindings
 cfgv==3.4.0
     # via pre-commit
+charset-normalizer==3.2.0
+    # via
+    #   -c requirements.txt
+    #   aiohttp
+    #   requests
 click==8.1.7
     # via
     #   -c requirements.txt
     #   black
+    #   rocrate
 comm==0.1.4
     # via
     #   -c requirements.txt
     #   ipykernel
-coverage==7.3.0
+coverage==7.3.2
     # via nbval
 debugpy==1.6.7.post1
     # via
@@ -41,11 +104,16 @@ decorator==5.1.1
     # via
     #   -c requirements.txt
     #   ipython
+defusedxml==0.7.1
+    # via
+    #   -c requirements.txt
+    #   nbconvert
 distlib==0.3.7
     # via virtualenv
 exceptiongroup==1.1.3
     # via
     #   -c requirements.txt
+    #   anyio
     #   pytest
 executing==1.2.0
     # via
@@ -58,11 +126,50 @@ fastjsonschema==2.18.0
 filelock==3.12.3
     # via
     #   -c requirements.txt
+    #   cachecontrol
     #   virtualenv
 flake8==6.1.0
     # via -r requirements-dev.in
-identify==2.5.27
+fqdn==1.5.1
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+frozenlist==1.4.0
+    # via
+    #   -c requirements.txt
+    #   aiohttp
+    #   aiosignal
+future==0.18.3
+    # via
+    #   -c requirements.txt
+    #   tuspy
+galaxy2cwl==0.1.4
+    # via
+    #   -c requirements.txt
+    #   rocrate
+gitdb==4.0.11
+    # via gitpython
+gitpython==3.1.40
+    # via -r requirements-dev.in
+giturlparse==0.12.0
+    # via -r requirements-dev.in
+gxformat2==0.18.0
+    # via
+    #   -c requirements.txt
+    #   galaxy2cwl
+identify==2.5.30
     # via pre-commit
+idna==3.4
+    # via
+    #   -c requirements.txt
+    #   anyio
+    #   jsonschema
+    #   requests
+    #   yarl
+importlib-resources==6.0.1
+    # via
+    #   -c requirements.txt
+    #   schema-salad
 iniconfig==2.0.0
     # via pytest
 ipykernel==6.25.1
@@ -75,15 +182,34 @@ ipython==8.14.0
     #   black
     #   ipykernel
     #   nbqa
+isodate==0.6.1
+    # via
+    #   -c requirements.txt
+    #   rdflib
+isoduration==20.11.0
+    # via
+    #   -c requirements.txt
+    #   jsonschema
 isort==5.12.0
     # via -r requirements-dev.in
 jedi==0.19.0
     # via
     #   -c requirements.txt
     #   ipython
-jsonschema==4.19.0
+jinja2==3.1.2
     # via
     #   -c requirements.txt
+    #   jupyter-server
+    #   nbconvert
+    #   rocrate
+jsonpointer==2.4
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+jsonschema[format-nongpl]==4.19.0
+    # via
+    #   -c requirements.txt
+    #   jupyter-events
     #   nbformat
 jsonschema-specifications==2023.7.1
     # via
@@ -93,13 +219,41 @@ jupyter-client==8.3.1
     # via
     #   -c requirements.txt
     #   ipykernel
+    #   jupyter-server
+    #   nbclient
     #   nbval
 jupyter-core==5.3.1
     # via
     #   -c requirements.txt
     #   ipykernel
     #   jupyter-client
+    #   jupyter-server
+    #   nbclient
+    #   nbconvert
     #   nbformat
+jupyter-events==0.7.0
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+jupyter-server==2.7.2
+    # via
+    #   -c requirements.txt
+    #   jupyterlab-code-formatter
+jupyter-server-terminals==0.4.4
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+jupyterlab-code-formatter==2.2.1
+    # via -r requirements-dev.in
+jupyterlab-pygments==0.2.2
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+markupsafe==2.1.3
+    # via
+    #   -c requirements.txt
+    #   jinja2
+    #   nbconvert
 matplotlib-inline==0.1.6
     # via
     #   -c requirements.txt
@@ -107,13 +261,39 @@ matplotlib-inline==0.1.6
     #   ipython
 mccabe==0.7.0
     # via flake8
+mistune==2.0.5
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+    #   schema-salad
+msgpack==1.0.5
+    # via
+    #   -c requirements.txt
+    #   cachecontrol
+multidict==6.0.4
+    # via
+    #   -c requirements.txt
+    #   aiohttp
+    #   yarl
 mypy-extensions==1.0.0
     # via
     #   -c requirements.txt
     #   black
+    #   schema-salad
+nbclient==0.7.4
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+nbconvert==7.7.4
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 nbformat==5.9.2
     # via
     #   -c requirements.txt
+    #   jupyter-server
+    #   nbclient
+    #   nbconvert
     #   nbval
 nbqa==1.7.0
     # via -r requirements-dev.in
@@ -125,12 +305,23 @@ nest-asyncio==1.5.7
     #   ipykernel
 nodeenv==1.8.0
     # via pre-commit
+overrides==7.4.0
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 packaging==23.1
     # via
     #   -c requirements.txt
     #   black
     #   ipykernel
+    #   jupyter-server
+    #   jupyterlab-code-formatter
+    #   nbconvert
     #   pytest
+pandocfilters==1.5.0
+    # via
+    #   -c requirements.txt
+    #   nbconvert
 parso==0.8.3
     # via
     #   -c requirements.txt
@@ -155,8 +346,12 @@ pluggy==1.3.0
     # via
     #   -c requirements.txt
     #   pytest
-pre-commit==3.3.3
+pre-commit==3.5.0
     # via -r requirements-dev.in
+prometheus-client==0.17.1
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 prompt-toolkit==3.0.39
     # via
     #   -c requirements.txt
@@ -169,56 +364,151 @@ ptyprocess==0.7.0
     # via
     #   -c requirements.txt
     #   pexpect
+    #   terminado
 pure-eval==0.2.2
     # via
     #   -c requirements.txt
     #   stack-data
-pycodestyle==2.11.0
+pycodestyle==2.11.1
     # via
     #   autopep8
     #   flake8
+pycparser==2.21
+    # via
+    #   -c requirements.txt
+    #   cffi
 pyflakes==3.1.0
     # via flake8
 pygments==2.16.1
     # via
     #   -c requirements.txt
     #   ipython
-pytest==7.4.0
+    #   nbconvert
+pyparsing==3.0.9
+    # via
+    #   -c requirements.txt
+    #   rdflib
+pytest==7.4.2
     # via
     #   -r requirements-dev.in
     #   nbval
 python-dateutil==2.8.2
     # via
     #   -c requirements.txt
+    #   arrow
     #   jupyter-client
+    #   rocrate
+python-json-logger==2.0.7
+    # via
+    #   -c requirements.txt
+    #   jupyter-events
 pyyaml==6.0.1
     # via
     #   -c requirements.txt
+    #   galaxy2cwl
+    #   gxformat2
+    #   jupyter-events
     #   pre-commit
 pyzmq==25.1.1
     # via
     #   -c requirements.txt
     #   ipykernel
     #   jupyter-client
+    #   jupyter-server
+rdflib==6.3.2
+    # via
+    #   -c requirements.txt
+    #   schema-salad
 referencing==0.30.2
     # via
     #   -c requirements.txt
     #   jsonschema
     #   jsonschema-specifications
+    #   jupyter-events
+requests==2.31.0
+    # via
+    #   -c requirements.txt
+    #   bioblend
+    #   cachecontrol
+    #   requests-toolbelt
+    #   rocrate
+    #   schema-salad
+    #   tuspy
+requests-toolbelt==1.0.0
+    # via
+    #   -c requirements.txt
+    #   bioblend
+rfc3339-validator==0.1.4
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+    #   jupyter-events
+rfc3986-validator==0.1.1
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+    #   jupyter-events
+rocrate==0.9.0
+    # via
+    #   -c requirements.txt
+    #   -r requirements-dev.in
 rpds-py==0.10.0
     # via
     #   -c requirements.txt
     #   jsonschema
     #   referencing
+ruamel-yaml==0.17.32
+    # via
+    #   -c requirements.txt
+    #   schema-salad
+ruamel-yaml-clib==0.2.7
+    # via
+    #   -c requirements.txt
+    #   ruamel-yaml
+schema-salad==8.4.20230808163024
+    # via
+    #   -c requirements.txt
+    #   gxformat2
+send2trash==1.8.2
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 six==1.16.0
     # via
     #   -c requirements.txt
     #   asttokens
+    #   bleach
+    #   isodate
     #   python-dateutil
+    #   rfc3339-validator
+    #   tuspy
+smmap==5.0.1
+    # via gitdb
+sniffio==1.3.0
+    # via
+    #   -c requirements.txt
+    #   anyio
+soupsieve==2.4.1
+    # via
+    #   -c requirements.txt
+    #   beautifulsoup4
 stack-data==0.6.2
     # via
     #   -c requirements.txt
     #   ipython
+terminado==0.17.1
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+    #   jupyter-server-terminals
+tinycss2==1.2.1
+    # via
+    #   -c requirements.txt
+    #   nbconvert
+tinydb==4.8.0
+    # via
+    #   -c requirements.txt
+    #   tuspy
 tokenize-rt==5.2.0
     # via
     #   black
@@ -235,6 +525,8 @@ tornado==6.3.3
     #   -c requirements.txt
     #   ipykernel
     #   jupyter-client
+    #   jupyter-server
+    #   terminado
 traitlets==5.9.0
     # via
     #   -c requirements.txt
@@ -243,18 +535,53 @@ traitlets==5.9.0
     #   ipython
     #   jupyter-client
     #   jupyter-core
+    #   jupyter-events
+    #   jupyter-server
     #   matplotlib-inline
+    #   nbclient
+    #   nbconvert
     #   nbformat
+tuspy==1.0.1
+    # via
+    #   -c requirements.txt
+    #   bioblend
 typing-extensions==4.7.1
     # via
     #   -c requirements.txt
+    #   bioblend
+    #   black
     #   filelock
-virtualenv==20.24.3
+uri-template==1.3.0
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+urllib3==2.0.4
+    # via
+    #   -c requirements.txt
+    #   requests
+virtualenv==20.24.5
     # via pre-commit
 wcwidth==0.2.6
     # via
     #   -c requirements.txt
     #   prompt-toolkit
+webcolors==1.13
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+webencodings==0.5.1
+    # via
+    #   -c requirements.txt
+    #   bleach
+    #   tinycss2
+websocket-client==1.6.2
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+yarl==1.9.2
+    # via
+    #   -c requirements.txt
+    #   aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
