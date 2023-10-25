@@ -6,3 +6,7 @@ black[jupyter]
 isort
 flake8
 pre-commit
+rocrate
+giturlparse
+jupyterlab-code-formatter
+gitpython

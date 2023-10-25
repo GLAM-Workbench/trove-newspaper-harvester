@@ -3,6 +3,7 @@ import argparse
 import datetime
 import requests
 from giturlparse import parse as ghparse
+from git import Repo
 from pathlib import Path
 from typing import Union, List, Dict, Tuple
 import mimetypes
@@ -38,6 +39,11 @@ PYTHON = {
     "@type": ["ComputerLanguage", "SoftwareApplication"],
 }
 
+DEFAULT_AUTHORS = [{
+    "name": "Sherratt, Tim",
+    "orcid": "0000-0001-7956-4498"
+}]
+
 
 def main(version: str):
     # Make working directory the parent of the scripts directory
@@ -45,7 +51,7 @@ def main(version: str):
 
     # Get a list of paths to notebooks in the cwd
     notebooks = get_notebooks()
-
+    print(notebooks)
     # Update the crate
     update_crate(version, notebooks)
 
@@ -59,8 +65,9 @@ def get_notebooks() -> List[Path]:
     Returns:
         Paths of the notebooks found in the directory
     """
-    files = [Path(file) for file in os.listdir()]
-    is_notebook = lambda file: file.suffix == NOTEBOOK_EXTENSION
+    # files = [Path(file) for file in os.listdir()]
+    files = Path(".").glob("*.ipynb")
+    is_notebook = lambda file: not file.name.lower().startswith(("draft", "untitled"))
     return list(filter(is_notebook, files))
 
 
@@ -300,6 +307,7 @@ def add_notebook(crate: ROCrate, notebook: Path) -> None:
             "result": [],
         },
     )
+    print(notebook_metadata)
 
     # Check if this notebook is already in the crate
     nb_current = crate.get(notebook.name)
@@ -313,8 +321,7 @@ def add_notebook(crate: ROCrate, notebook: Path) -> None:
         properties.update(
             {
                 "name": notebook_metadata["name"],
-                "description": notebook_metadata["description"],
-                "author": [],
+                "description": notebook_metadata["description"]
             }
         )
     else:
@@ -342,21 +349,22 @@ def add_notebook(crate: ROCrate, notebook: Path) -> None:
     nb_new = crate.add_file(notebook, properties=properties)
 
     # Add a CreateAction that links the notebook run with the input and output files
-    add_action(crate, nb_new, input_files, output_files)
+    if input_files or output_files:
+        add_action(crate, nb_new, input_files, output_files)
 
     # If the notebook has author info, add people to crate
     if notebook_metadata["author"]:
         # Add people referenced in notebook metadata
         persons = add_people(crate, notebook_metadata["author"])
 
-        # If people are not already attached to notebook, append them to the author property
-        for person in persons:
-            if person not in nb_current["author"]:
-                nb_new.append_to("author", person)
-
     # Otherwise add crate root authors to notebook
     else:
-        nb_new.append_to("author", root["author"])
+        persons = root["author"]
+
+    # If people are not already attached to notebook, append them to the author property
+    for person in persons:
+        if (nb_current and person not in nb_current.get("author", [])) or not nb_current:
+            nb_new.append_to("author", person)
 
 
 def remove_deleted_files(crate: ROCrate) -> None:
@@ -442,7 +450,23 @@ def update_crate(version: str, notebooks: List[Path]) -> None:
         notebooks: The notebooks to include in the crate
     """
     # Load existing crate from cwd
-    crate = ROCrate(source="./")
+    try:
+        crate = ROCrate(source="./")
+    except ValueError:
+        crate = ROCrate()
+        repo = Repo(".")
+        repo_url = repo.git.config("--get", "remote.origin.url").rstrip(".git")
+        repo_name = repo_url.split("/")[-1]
+        crate.update_jsonld(
+            {
+                "@id": "./",
+                "name": repo_name,
+                "description": "A GLAM Workbench repository",
+                "url": repo_url,
+                "author": id_ify([a["orcid"] for a in DEFAULT_AUTHORS])
+            }
+        )
+        add_people(crate, DEFAULT_AUTHORS)
 
     # If this is a new version, change version number and add UpdateAction
     if version:
