@@ -10,7 +10,7 @@
                 }
             ],
             "datePublished": "2024-05-24",
-            "description": "A GLAM Workbench repository",
+            "description": "The Trove Newspaper & Gazette Harvester makes it easy to download large quantities of digitised articles from Trove's newspapers and gazettes. Just give it a search from the Trove web interface, and the harvester will save the metadata of all the articles in a CSV (spreadsheet) file for further analysis. You can also save the full text of every article, as well as copies of the articles as JPG images, and even PDFs. While the web interface will only show you the first 2,000 results matching your search, the Newspaper & Gazette Harvester will get everything.",
             "hasPart": [
                 {
                     "@id": "display_harvest_results_using_datasette.ipynb"
@@ -289,7 +289,7 @@
             "isPartOf": {
                 "@id": "https://glam-workbench.net/"
             },
-            "name": "Redirecting...",
+            "name": "Trove Newspaper & Gazette Harvester",
             "url": "https://glam-workbench.net/trove-newspaper-harvester"
         },
         {
@@ -390,6 +390,15 @@
             },
             "name": "Exploring your TroveHarvester data",
             "url": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-data/"
+        },
+        {
+            "@id": "#create_version_v2_0_1",
+            "@type": "UpdateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2023-10-25",
+            "name": "Create version v2.0.1"
         },
         {
             "@id": "#create_version_v2_1_0",
