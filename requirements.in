@@ -23,3 +23,5 @@ jupyter-server-proxy
 jupyter-archive
 python-dotenv
 scikit-learn
+natsort
+trove-newspaper-harvester

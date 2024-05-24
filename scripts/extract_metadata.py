@@ -1,13 +1,8 @@
-import json
-from pathlib import Path
-from typing import Any, Dict, List, Optional
 import nbformat
 import re
 
-AuthorInfo = Dict[str, str]
+LISTIFY = ["author", "object", "result"]
 
-
-LISTIFY = ["author", "object", "input"]
 
 def listify(value):
     if not isinstance(value, list):
@@ -20,7 +15,8 @@ def extract_notebook_title(nb):
         if title := re.search(r"^# (.+)(\n|$)", cell["source"]):
             return title.group(1)
 
-def extract_notebook_metadata(notebook: Path, keys: Dict[str, Any]) -> Dict[str, Any]:
+
+def extract_notebook_metadata(notebook, keys):
     """Attempts to extract metadata from the notebook.
 
     Parameters:
@@ -40,4 +36,3 @@ def extract_notebook_metadata(notebook: Path, keys: Dict[str, Any]) -> Dict[str,
         else:
             result[key] = metadata.get(key, default)
     return result
-

@@ -6,37 +6,46 @@
             "@type": "Dataset",
             "author": [
                 {
-                    "@id": "0000-0001-7956-4498"
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "datePublished": "2023-10-25",
+            "datePublished": "2024-05-24",
             "description": "A GLAM Workbench repository",
             "hasPart": [
                 {
-                    "@id": "newspaper_harvester_app.ipynb"
-                },
-                {
-                    "@id": "Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb"
+                    "@id": "display_harvest_results_using_datasette.ipynb"
                 },
                 {
                     "@id": "Explore-harvested-text-files.ipynb"
                 },
                 {
-                    "@id": "display_harvest_results_using_datasette.ipynb"
+                    "@id": "Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb"
+                },
+                {
+                    "@id": "newspaper_harvester_app.ipynb"
                 },
                 {
                     "@id": "Exploring-your-TroveHarvester-data.ipynb"
                 },
                 {
+                    "@id": "basic-harvester-example.ipynb"
+                },
+                {
                     "@id": "harvest-specific-days.ipynb"
+                },
+                {
+                    "@id": "reshaping-harvests.ipynb"
                 }
             ],
             "license": {
                 "@id": "https://spdx.org/licenses/MIT"
             },
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-newspaper-harvester"
+            },
             "name": "trove-newspaper-harvester",
-            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
-            "version": "v2.0.1"
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
+            "version": "v2.1.0"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -52,7 +61,7 @@
             }
         },
         {
-            "@id": "newspaper_harvester_app.ipynb",
+            "@id": "display_harvest_results_using_datasette.ipynb",
             "@type": [
                 "File",
                 "SoftwareSourceCode"
@@ -62,38 +71,23 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
+            "category": "exploring",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
             "conformsTo": {
                 "@id": "https://purl.archive.org/textcommons/profile#Notebook"
             },
-            "description": "",
+            "description": "Datasette is 'a tool for exploring and publishing data'. Give it a CSV file and it turns it into a fully-searchable database, running in your browser. It supports facets, full-text search, and, with a bit of tweaking, can even present images. Although Datasette is a command-line tool, we can run from within a Jupyter notebook, and open a new window to display the results. This notebook shows you how to load the newspaper data you've harvested into Datasette, and start it up. If you've also harvested full-text and images from the newspaper articles, you can add these to your database as well!",
             "encodingFormat": "application/x-ipynb+json",
-            "name": "Trove Newspaper & Gazette Harvester",
-            "programmingLanguage": {
-                "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
-        },
-        {
-            "@id": "Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb",
-            "@type": [
-                "File",
-                "SoftwareSourceCode"
-            ],
-            "author": [
-                {
-                    "@id": "https://orcid.org/0000-0001-7956-4498"
-                }
-            ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
-            "conformsTo": {
-                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-harvester/display-harvest-results-in-datasette/"
             },
-            "description": "",
-            "encodingFormat": "application/x-ipynb+json",
-            "name": "Using TroveHarvester to get newspaper and gazette articles in bulk",
+            "name": "Display the results of a harvest as a searchable database using Datasette",
+            "position": 1,
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/display_harvest_results_using_datasette.ipynb",
+            "workExample": []
         },
         {
             "@id": "Explore-harvested-text-files.ipynb",
@@ -106,19 +100,26 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
+            "category": "exploring",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
             "conformsTo": {
                 "@id": "https://purl.archive.org/textcommons/profile#Notebook"
             },
-            "description": "",
+            "description": "This notebook suggests some ways in which you can aggregate and analyse the individual OCRd text files for each article \u2014 look at word frequencies ; calculate TF-IDF values. (Under construction)",
             "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-text/"
+            },
             "name": "Explore harvested text files",
+            "position": 3,
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/Explore-harvested-text-files.ipynb",
+            "workExample": []
         },
         {
-            "@id": "display_harvest_results_using_datasette.ipynb",
+            "@id": "Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb",
             "@type": [
                 "File",
                 "SoftwareSourceCode"
@@ -128,16 +129,52 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
+            "category": "harvesting",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
             "conformsTo": {
                 "@id": "https://purl.archive.org/textcommons/profile#Notebook"
             },
-            "description": "",
+            "description": "The Trove Newspaper & Gazette Harvester is a command line tool and Python package that helps you download large quantities of digitised articles from Trove's newspapers and gazettes. This notebook demonstrates the basic use of the command line tool.",
             "encodingFormat": "application/x-ipynb+json",
-            "name": "Display the results of a harvest as a searchable database using Datasette",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-harvester/using-troveharvester/"
+            },
+            "name": "Using the Trove Newspaper Harvester on the command line",
+            "position": 5,
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/Using-TroveHarvester-to-get-newspaper-articles-in-bulk.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "newspaper_harvester_app.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "harvesting",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "A simple web interface to the Trove Newspaper and Gazette Harvester \u2013 the easiest and quickest way to download all the results from a Trove newspaper or gazette search.",
+            "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-harvester/harvester-web-app/"
+            },
+            "name": "Trove Newspaper & Gazette Harvester",
+            "position": 1,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/newspaper_harvester_app.ipynb",
+            "workExample": []
         },
         {
             "@id": "Exploring-your-TroveHarvester-data.ipynb",
@@ -150,16 +187,49 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
+            "category": "exploring",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
             "conformsTo": {
                 "@id": "https://purl.archive.org/textcommons/profile#Notebook"
             },
-            "description": "",
+            "description": "This notebook shows some ways in which you can analyse and visualise the article metadata you've harvested \u2014 show the distribution of articles over time and space; find which newspapers published the most articles. (Under construction)",
             "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-data/"
+            },
             "name": "Exploring your harvested data",
+            "position": 2,
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/Exploring-your-TroveHarvester-data.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "basic-harvester-example.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "harvesting",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "This notebook uses the [trove-newspaper-harvester](https://wragge.github.io/trove-newspaper-harvester/) Python package to harvest the complete results of a search in Trove's digitised newspapers or gazettes. The default settings will save both the article metadata and all of the OCRd text.",
+            "encodingFormat": "application/x-ipynb+json",
+            "name": "Using the Trove Harvester as a Python package",
+            "position": 2,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/basic-harvester-example.ipynb",
+            "workExample": []
         },
         {
             "@id": "harvest-specific-days.ipynb",
@@ -172,21 +242,73 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester",
+            "category": "harvesting",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
             "conformsTo": {
                 "@id": "https://purl.archive.org/textcommons/profile#Notebook"
             },
-            "description": "",
+            "description": "The Trove Newspaper Harvester web app and command-line tool make it easy for you to harvest the results of a single search. But if you want to harvest very large or complex searches, you might find it easier to import the trove_newspaper_harvester library directly and take control of the harvesting process. For example, this notebook demonstrates how to harvest all of the newspaper articles mentioning 'Anzac Day' that were published on Anzac Day, 25 April.",
             "encodingFormat": "application/x-ipynb+json",
             "name": "Harvesting articles that mention \"Anzac Day\" on Anzac Day",
+            "position": 4,
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
-            }
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/harvest-specific-days.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "reshaping-harvests.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "The Trove Newspaper Harvester downloads the OCRd text of newspaper articles as individual text files \u2013 one file for each article. That's great for exploring the content of individual articles in depth, but sometimes you might want to zoom out and aggregate the files into larger chunks. For example, if you're interested in how language changes over time, you might what to create a separate corpus for each year in the results set. Or perhaps you want to examine differences in the way particular newspapers talk about an event by grouping the articles by newspaper. This notebook provides a slice and dice wonder tool for Trove newspaper harvests, enabling you to repackage OCRd text by decade, year, and newspaper title. It saves the results as zip files, concatenated text files, or CSV files with embedded text. These repackaged slices should suit a variety of text analysis tools and questions.",
+            "encodingFormat": "application/x-ipynb+json",
+            "name": "Reshaping your newspaper harvest",
+            "position": 0,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/blob/master/reshaping-harvests.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-newspaper-harvester",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/"
+            },
+            "name": "Redirecting...",
+            "url": "https://glam-workbench.net/trove-newspaper-harvester"
+        },
+        {
+            "@id": "https://glam-workbench.net/",
+            "@type": "CreativeWork",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "description": "A collection of tools, tutorials, examples, and hacks to help researchers work with data from galleries, libraries, archives, and museums (the GLAM sector).",
+            "name": "GLAM Workbench",
+            "url": "https://glam-workbench.net/"
         },
         {
             "@id": "https://orcid.org/0000-0001-7956-4498",
             "@type": "Person",
-            "name": "Sherratt, Tim"
+            "name": "Sherratt, Tim",
+            "orcid": "https://orcid.org/0000-0001-7956-4498"
         },
         {
             "@id": "https://spdx.org/licenses/MIT",
@@ -201,6 +323,20 @@
             "url": "https://creativecommons.org/publicdomain/zero/1.0/"
         },
         {
+            "@id": "http://rightsstatements.org/vocab/NKC/1.0/",
+            "@type": "CreativeWork",
+            "description": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+            "name": "No Known Copyright",
+            "url": "http://rightsstatements.org/vocab/NKC/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/CNE/1.0/",
+            "@type": "CreativeWork",
+            "description": "The copyright and related rights status of this Item has not been evaluated.",
+            "name": "Copyright Not Evaluated",
+            "url": "http://rightsstatements.org/vocab/CNE/1.0/"
+        },
+        {
             "@id": "https://www.python.org/downloads/release/python-31012/",
             "@type": [
                 "ComputerLanguage",
@@ -211,13 +347,58 @@
             "version": "3.10.12"
         },
         {
-            "@id": "#create_version_v2_0_1",
+            "@id": "https://glam-workbench.net/trove-harvester/display-harvest-results-in-datasette/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Display the results of a harvest as a searchable database using Datasette",
+            "url": "https://glam-workbench.net/trove-harvester/display-harvest-results-in-datasette/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-text/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Exploring text files harvested with the Trove Harvester",
+            "url": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-text/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-harvester/using-troveharvester/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Using TroveHarvester to get newspaper and gazette articles in bulk",
+            "url": "https://glam-workbench.net/trove-harvester/using-troveharvester/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-harvester/harvester-web-app/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Trove Harvester web app",
+            "url": "https://glam-workbench.net/trove-harvester/harvester-web-app/"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-data/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Exploring your TroveHarvester data",
+            "url": "https://glam-workbench.net/trove-harvester/exploring-troveharvester-data/"
+        },
+        {
+            "@id": "#create_version_v2_1_0",
             "@type": "UpdateAction",
             "actionStatus": {
                 "@id": "http://schema.org/CompletedActionStatus"
             },
-            "endDate": "2023-10-25",
-            "name": "Create version v2.0.1"
+            "endDate": "2024-05-24",
+            "name": "Create version v2.1.0"
         }
     ]
 }
