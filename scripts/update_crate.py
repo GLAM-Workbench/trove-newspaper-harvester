@@ -795,6 +795,8 @@ def update_crate(version, data_repo, notebooks):
             }
         )
         add_update_action(crate, version)
+        crate.write(crate_source)
+        return
 
     # Add licence to root
     crate.license = id_ify(DEFAULT_LICENCE["@id"])

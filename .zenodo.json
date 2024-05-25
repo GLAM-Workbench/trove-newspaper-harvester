@@ -5,7 +5,7 @@
   "related_identifiers": [
     {
       "scheme": "url",
-      "identifier": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/tree/v2.1.0",
+      "identifier": "https://github.com/GLAM-Workbench/trove-newspaper-harvester/tree/v2.1.1",
       "relation": "isDerivedFrom",
       "resource_type": "software"
     },
@@ -22,7 +22,7 @@
       "resource_type": "other"
     }
   ],
-  "version": "v2.1.0",
+  "version": "v2.1.1",
   "upload_type": "software",
   "keywords": [
     "Trove",
@@ -30,7 +30,7 @@
     "Jupyter",
     "GLAM Workbench"
   ],
-  "publication_date": "2024-05-24",
+  "publication_date": "2024-05-25",
   "creators": [
     {
       "orcid": "0000-0001-7956-4498",
